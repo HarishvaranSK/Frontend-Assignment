@@ -99,7 +99,7 @@ function App() {
     localStorage.removeItem('nav'); }}>Reset</button>
           <button style = {{backgroundColor:'crimson', color : 'white', fontSize : '20px', borderRadius : '10px', cursor:'pointer', padding : '8px', border : '0px'}} onClick={handleSave}>Save</button>
         </div>
-        {nav ?
+        {nav && text.length !== 0 ?
           <div style={{ display: 'flex', alignItems: 'center', gap: '20px', justifyContent: 'center', fontSize: '20px' }}>The Entered Text with Font {savedFont} and style of {savedWeight} is  :<h1 style={styleVal}> {text}</h1></div> : ''
         }
       </center>
